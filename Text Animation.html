@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: sans-serif;
+            font-size: 70px;
+            font-weight: 500;
+            color: #fff;
+        }
+        body{
+            background-color: #222;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            }
+            .wrapper{
+                box-sizing: content-box;
+                height: 10vh;
+                padding: 50px 30px;
+                display: flex;
+                border-radius: 8px;
+            }
+            .word{
+                overflow: hidden;
+            }
+            span{
+                cursor: pointer;
+                display: block;
+                height: 100%;
+                padding-left: 10px;
+                color: #bdfc0e;
+                animation: jamiu 6s infinite ;
+            }   
+            @keyframes jamiu {
+                15%{
+                    transform: translateY(-112%);
+                }
+                25%{
+                    transform: translateY(-100%);
+                }
+                35%{
+                    transform: translateY(-212%);
+                }
+                50%{
+                    transform: translateY(-200%);
+                }
+                60%{
+                    transform: translateY(-312%);
+                }
+                75%{
+                    transform: translateY(-300%);
+                }
+               85%{
+                    transform: translateY(-412%);
+                }
+                100%{
+                    transform: translateY(-400%);
+                }
+            }
+             </style>
+</head>
+<body>
+    <div class="wrapper">
+        <p>Coding is </p>
+        <div class="word">
+            <span></span>
+            <span>Fantasic</span>
+            <span>Intersting</span>
+            <span>Awesome</span>
+            <span>Incredible</span>
+            <span>My Passion</span>
+        </div>
+    </div>
+    
+</body>
+</html>

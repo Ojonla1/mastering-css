@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    width: 80% auto;
+    height: 10vh;
+    align-items: center;
+}
+.logo-container{
+    margin-left: 20px;
+    flex: 1;
+}
+nav{
+    flex: 2;
+}
+.logo-container img{
+    width: 35px;
+}
+.logo{
+    margin-left: 45px;
+    margin-top: -30px;
+    font-weight: 600;
+}
+ul li{
+    display: inline-block;
+    padding: 12px;
+    margin: 20px;
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial Narrrow;
+}
+a::after{
+    content: '';
+    width: 0px;
+    height: 4px;
+    display: block;
+    background-color: tomato;
+    margin: auto;
+}
+a:hover:after{
+    width: 100%;
+    /* background-color: yellow; */
+}
+.presentation{
+    display: flex;
+    width: 80% auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 80vh;
+    align-items: center;
+}
+button{
+    font-family: sans-serif;
+}
+.introduction{
+    flex: 1;
+}
+.cover{
+    height: 50vh;
+    filter: drop-shadow(0px 5px 12px black);
+    animation: drop 1.5s infinite;
+}
+@keyframes drop {
+    0% {
+        opacity: 0; 
+        transform: translateY(-80px)
+    }
+    100% {
+        opacity: 1; 
+        transform: translateY(0px)
+    }
+}
+.intro-text h1{
+    font-weight:800;
+    font-size: 40px;
+    background: linear-gradient(to right, red, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Impact;
+    margin-top: 35px;
+}
+.intro-text p{
+    margin-top: 35px;
+    font-size: 16px;
+    color: #585772;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.intro-text p span{
+    color: tomato;
+    font-family: Allstar;
+}
+.cta{
+    padding: 50px 0px 0px 0px;
+}
+.cta-select{
+    border: 2px solid #c36cbb;
+    background: transparent;
+    color: #c36cbb;
+    cursor: pointer;
+    height: 50px;
+    font-size: 18px;
+    width: 150px;
+    transition: .2s ease-in-out;
+}
+.cta-select:hover{
+     transform: scale(1.25);
+    }
+.cta-add{
+    background: #c36cbb;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    font-size: 18px;
+    width: 150px;
+    margin: 30px 0px 0px 30px;
+    border: none;
+    transition: .2s ease-in-out;
+}
+.cta-add:hover{
+    transform: scale(1.25);
+}
+section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(images/bg4.jfif);
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section h2{
+    text-align: center;
+    color: white;
+}

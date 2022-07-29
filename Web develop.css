@@ -1,0 +1,137 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    display: flex;
+    width: 80% auto;
+    height: 10vh;
+    align-items: center;
+}
+.logo-container{
+    margin-left: 20px;
+    flex: 1;
+}
+nav{
+    flex: 2;
+}
+.logo-container img{
+    width: 45px;
+}
+.logo{
+    margin-left: 55px;
+    margin-top: -30px;
+    font-weight: 600;
+}
+ul li{
+    display: inline-block;
+    padding: 12px;
+    margin: 20px;
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial Narrrow;
+}
+a:hover:after{
+    width: 100%;
+    /* background-color: yellow; */
+}
+a::after{
+    content: '';
+    width: 0px;
+    height: 4px;
+    display: block;
+    background-color: tomato;
+    margin: auto;
+}
+section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(images/osun.png);
+    height:60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.aja{
+    text-align: center;
+}
+.aja h1{
+    font-family: andalus;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900px;
+    color: whitesmoke;
+}
+.aja p{
+    color: white;
+    font-size: 20px;
+}
+.aja small{
+    color: wheat;
+    font-size: 20px;
+}
+.wrapper{
+    text-transform: uppercase;
+    margin-left: 450px;
+    box-sizing: content-box;
+    height: 10vh;
+    padding: 50px 30px;
+    display: flex;
+    border-radius: 8px;
+}
+.word{
+    overflow: hidden;
+}
+span{
+   font-size: 30px;
+   font-weight: 900;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    color: #bdfc0e;
+    animation: jamiu 6s infinite ;
+}   
+@keyframes jamiu {
+    15%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+   85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
+img{
+    transition: .3sease-in-out;
+}
+img:hover{
+    transform: scale(1.5);
+}
+.me1, .me2, .me3, .me4{
+    margin: 70px
+}
+footer{
+    background: lightpink;
+    height: 40px;
+}
+p{
+    text-align: center;
+   
